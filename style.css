@@ -78,7 +78,7 @@ body {
     display: flex;
     list-style: none;
 }
-.nav__item a {
+.nav__item {
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
@@ -88,6 +88,10 @@ body {
     color: #000000;
     margin-right: 37px;
 }
+.nav__item a:hover {
+    transition: all 0.2s;
+   color: #F2726F;
+ }
 .nav__item:last-child a {
     margin-right: 0;
 }
@@ -109,3 +113,55 @@ body {
 }
 .main {
 }
+
+
+.dropbtn {
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    text-decoration: none;
+    color: #000000;
+}
+.checkmark{
+margin-left: 5px;
+}
+.dropbtn:hover, .dropbtn:focus {
+   transition: all 0.2s;
+  color: #F2726F;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 230px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown a:hover {
+    transition: all 0.2s;
+    color: #F2726F;
+}
+
+.show {display: block;}

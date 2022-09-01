@@ -34,27 +34,39 @@
                     </div>
                     <a href="#" class="button button--header">Make an appointment</a>
                 </div>
-                
-                <nav class="navigation">
-                    <!-- <div class="dropdown">
-                        <button class="dropbtn" onclick="myFunction()">DDDDD
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content" id="myDropdown">
-                            <a href="#">1</a>
-                            <a href="#">1</a>
-                            <a href="#">1</a>
-                        </div>
-                    </div> -->
 
-                    <ul class="nav__items">
-                        <li class="nav__item"><button>Services</button></li>
-                        <li class="nav__item"><a href="#">Specials</a></li>
-                        <li class="nav__item"><a href="#">Facilities</a></li>
-                        <li class="nav__item"><a href="#">Reviews</a></li>
-                        <li class="nav__item"><button>Shop</button></li>
-                        <li class="nav__item"><a href="#">About</a></li>
-                    </ul>
+                <nav class="navigation">
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Services <img class="checkmark" src="img/drop.svg"
+                                alt="checkmark"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Pet Boarding (No Cages)</a>
+                            <a href="#">Pet Daycare</a>
+                            <a href="#">Pet Day Spa & Grooming</a>
+                            <a href="#">Custom Meal Plans</a>
+                            <a href="#">Pet Training</a>
+                            <a href="#">Shop Our Store!</a>
+                        </div>
+                    </div>
+
+                    <div class="nav__items">
+                        <a class="nav__item" href="#">Specials</a>
+                        <a class="nav__item" href="#">Facilities</a>
+                        <a class="nav__item" href="#">Reviews</a>
+                        <a class="nav__item" href="#">About</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Shop <img class="checkmark" src="img/drop.svg" alt="checkmark"></button>
+                        <div id="myDropdown2" class="dropdown-content">
+                            <a href="#">Pet Boarding (No Cages)</a>
+                            <a href="#">Pet Daycare</a>
+                            <a href="#">Pet Day Spa & Grooming</a>
+                            <a href="#">Custom Meal Plans</a>
+                            <a href="#">Pet Training</a>
+                            <a href="#">Shop Our Store!</a>
+                        </div>
+                    </div>
                     <div class="nav__icons">
                         <a class="nav__icon" href="#"><img src="img/search_24px.svg" alt="search"></a>
                         <a class="nav__icon" href="#"><img src="img/shopping_cart_24px.svg" alt="shopping"></a>
@@ -69,9 +81,46 @@
     </div>
 
     <script>
-  
-    </script>
-</body>
+        // function myFunction() {
+        //     document.getElementById("myDropdown").classList.toggle("show");
+        // }
 
+        // window.onclick = function (event) {
+        //     if (!event.target.matches('.dropbtn')) {
+
+        //         var dropdowns = document.getElementsByClassName("dropdown-content");
+        //         var i;
+        //         for (i = 0; i < dropdowns.length; i++) {
+        //             var openDropdown = dropdowns[i];
+        //             if (openDropdown.classList.contains('show')) {
+        //                 openDropdown.classList.remove('show');
+        //             }
+        //         }
+        //     }
+        // }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                let dropdowns = document.getElementsByClassName('dropdown-content');
+                for (let i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        };
+
+        const dropbtn = document.querySelectorAll('.dropbtn');
+
+        dropbtn.forEach(function (item) {
+            item.onclick = function () {
+                this.nextElementSibling.classList.toggle('show')
+            };
+        })
+
+    </script>
+
+
+</body>
 
 </html>
