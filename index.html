@@ -36,37 +36,38 @@
                 </div>
 
                 <nav class="navigation">
-
-                    <div class="dropdown">
-                        <button class="dropbtn">Services <img class="checkmark" src="img/drop.svg"
-                                alt="checkmark"></button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#">Pet Boarding (No Cages)</a>
-                            <a href="#">Pet Daycare</a>
-                            <a href="#">Pet Day Spa & Grooming</a>
-                            <a href="#">Custom Meal Plans</a>
-                            <a href="#">Pet Training</a>
-                            <a href="#">Shop Our Store!</a>
-                        </div>
-                    </div>
-
                     <div class="nav__items">
+                        <div class="dropdown">
+                            <button class="dropbtn">Services <img class="checkmark" src="img/drop.svg"
+                                    alt="checkmark"></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Pet Boarding (No Cages)</a>
+                                <a href="#">Pet Daycare</a>
+                                <a href="#">Pet Day Spa & Grooming</a>
+                                <a href="#">Custom Meal Plans</a>
+                                <a href="#">Pet Training</a>
+                                <a href="#">Shop Our Store!</a>
+                            </div>
+                        </div>
+
                         <a class="nav__item" href="#">Specials</a>
                         <a class="nav__item" href="#">Facilities</a>
                         <a class="nav__item" href="#">Reviews</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Shop <img class="checkmark" src="img/drop.svg"
+                                    alt="checkmark"></button>
+                            <div id="myDropdown2" class="dropdown-content">
+                                <a href="#">Pet Boarding (No Cages)</a>
+                                <a href="#">Pet Daycare</a>
+                                <a href="#">Pet Day Spa & Grooming</a>
+                                <a href="#">Custom Meal Plans</a>
+                                <a href="#">Pet Training</a>
+                                <a href="#">Shop Our Store!</a>
+                            </div>
+                        </div>
                         <a class="nav__item" href="#">About</a>
                     </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">Shop <img class="checkmark" src="img/drop.svg" alt="checkmark"></button>
-                        <div id="myDropdown2" class="dropdown-content">
-                            <a href="#">Pet Boarding (No Cages)</a>
-                            <a href="#">Pet Daycare</a>
-                            <a href="#">Pet Day Spa & Grooming</a>
-                            <a href="#">Custom Meal Plans</a>
-                            <a href="#">Pet Training</a>
-                            <a href="#">Shop Our Store!</a>
-                        </div>
-                    </div>
+
                     <div class="nav__icons">
                         <a class="nav__icon" href="#"><img src="img/search_24px.svg" alt="search"></a>
                         <a class="nav__icon" href="#"><img src="img/shopping_cart_24px.svg" alt="shopping"></a>
@@ -79,25 +80,28 @@
             </main>
         </div>
     </div>
+    <div class="container">
+        <section class="who">
+            <img src="" alt="" class="img__dots">
+            <article class="who__content">
+            <p class="paragraph paragraph--who"><span><img src="/img/Overline.svg" alt=""></span> who we are</p>
+            <h2 class="title title--who">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
+            <p class="who__description">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea
+                voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+                nulla pariatur.
+            </p>
+            </article>
+            <img src="" alt="" class="who__img">
+        </section>
+    </div>
+
+
+
+
+
 
     <script>
-        // function myFunction() {
-        //     document.getElementById("myDropdown").classList.toggle("show");
-        // }
-
-        // window.onclick = function (event) {
-        //     if (!event.target.matches('.dropbtn')) {
-
-        //         var dropdowns = document.getElementsByClassName("dropdown-content");
-        //         var i;
-        //         for (i = 0; i < dropdowns.length; i++) {
-        //             var openDropdown = dropdowns[i];
-        //             if (openDropdown.classList.contains('show')) {
-        //                 openDropdown.classList.remove('show');
-        //             }
-        //         }
-        //     }
-        // }
         window.onclick = function (event) {
             if (!event.target.matches('.dropbtn')) {
                 let dropdowns = document.getElementsByClassName('dropdown-content');
@@ -109,7 +113,6 @@
                 }
             }
         };
-
         const dropbtn = document.querySelectorAll('.dropbtn');
 
         dropbtn.forEach(function (item) {
