@@ -12,6 +12,7 @@ body {
     height: 48px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 17px 33px;
     background-color: #f2726f;
     color: #fff;
@@ -303,6 +304,49 @@ body {
     width: 411px;
 }
 .img__tennis-ball {
-   
-   
+}
+/* Services */
+.wrapper__services {
+    background-color: #f5f5f5;
+    background-image: url(/img/bg-service.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container {
+}
+.services {
+    padding-top: 110px;
+    padding-bottom: 113px;
+}
+.title--services {
+    color: #000000;
+}
+.services__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    margin-bottom: 66px;
+}
+.services__card {
+    padding: 50px 44px;
+    background: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+.services__card-img{
+    margin-bottom: 33px;
+}
+.services__card:hover{
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.54); 
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.54);
+
+}
+.button {
+}
+.button--services {
+    max-width: 145px;
+margin-left: auto;
+margin-right: auto;
 }
