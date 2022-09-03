@@ -373,6 +373,7 @@ form {
     padding: 76px 57px;
     width: 585px;
     height: 640px;
+    margin-right: 111px;
 }
 .title--form {
     grid-column-start: 1;
@@ -404,7 +405,7 @@ textarea {
     background: #5d62b5;
     color: #ffffff;
 }
-.select{
+.select {
     color: #fff;
     padding-left: 24px;
     letter-spacing: 0.15px;
@@ -420,14 +421,25 @@ textarea {
 }
 .phone {
 }
-.button--form{
+.button--form {
     border: none;
 }
 .form__section-description {
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
 }
 .form-description {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 46px;
 }
-.form-numbers {
+#number {
+    font-size: 96px;
+    line-height: 56px;
+    margin-bottom: 46px;
 }
 .form-customers {
+font-size: 19px;
+line-height: 26px;
 }
