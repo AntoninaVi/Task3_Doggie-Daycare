@@ -311,7 +311,6 @@ body {
     background-image: url(/img/bg-service.png);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .container {
 }
@@ -335,18 +334,100 @@ body {
     border-radius: 20px;
     text-align: center;
 }
-.services__card-img{
+.services__card-img {
     margin-bottom: 33px;
 }
-.services__card:hover{
-    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.54); 
-    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.54);
-
+.services__card:hover {
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.54);
 }
 .button {
 }
 .button--services {
     max-width: 145px;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Form section */
+.wrapper__form {
+    background-image: url(img/bg-form.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 210px;
+}
+.form__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form {
+    display: grid;
+    grid-template-columns: 224px;
+    grid-template-rows: 10% 10% 10% 50%;
+    column-gap: 22px;
+    row-gap: 22px;
+    background: #5d62b5;
+    border-radius: 40px;
+    padding: 76px 57px;
+    width: 585px;
+    height: 640px;
+}
+.title--form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.title--form {
+    color: #ffffff;
+}
+input,
+select,
+textarea {
+    background: #5d62b5;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+::placeholder {
+    color: #fff;
+    padding-left: 24px;
+    letter-spacing: 0.15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.select option {
+    background: #5d62b5;
+    color: #ffffff;
+}
+.select{
+    color: #fff;
+    padding-left: 24px;
+    letter-spacing: 0.15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    display: block;
+}
+.name {
+}
+.email {
+}
+.phone {
+}
+.button--form{
+    border: none;
+}
+.form__section-description {
+}
+.form-description {
+}
+.form-numbers {
+}
+.form-customers {
 }

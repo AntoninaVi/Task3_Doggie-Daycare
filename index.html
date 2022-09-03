@@ -210,8 +210,32 @@
     </div>
     <div class="wrapper__form">
         <div class="container">
-            <section class="form">
-
+            <section class="form__section">
+                <form action="action_form" method="POST">
+                    <h2 class="title title--form">Make an apointment</h2>
+                    <input class="email" required="required" type="email" placeholder="Email">
+                    <input class="name" required="required" type="text" placeholder="Name">
+                    <input class="phone" required="required" type="tel" placeholder="Phone Number">
+                    <select class="select" name="select__service" required="required" placeholder="Select Service">
+                        <option value="">Select Service</option>
+                        <option class="option" value="2">Pet Boarding (No Cages)</option>
+                        <option class="option" value="3">Pet Daycare</option>
+                        <option class="option" value="4">Pet Day Spa & Grooming</option>
+                        <option class="option" value="5">Custom Meal Plans</option>
+                        <option class="option" value="6">Pet Training</option>
+                        <option class="option" value="7">Shop Our Store!</option>
+                    </select>
+                    <textarea name="details" required="required" cols="30" rows="10"
+                        placeholder="Tell us about your puppers include his/her name"></textarea>
+                    <input class="button button--form" type="submit" value="Make an apointment">
+                </form>
+                <div class="form__section-description">
+                    <p class="form-description">Maxime placeat facere possimus omnis</p>
+                    <!-- <div class="number">0</div> -->
+                    <!-- <div class="number" data-max="6000">5700</div> -->
+                    <div class="number" id="number"></div>
+                    <p class="form-customers">Maxime placeat facere possimus omnis</p>
+                </div>
             </section>
         </div>
     </div>
@@ -240,10 +264,38 @@
                 this.nextElementSibling.classList.toggle('show')
             };
         })
-
     </script>
+    <script>
+        var body = document.body,
+            html = document.documentElement,
+            number = document.querySelector('.number'),
+            max = 5700;
 
+        window.addEventListener('scroll', function () {
+            var scrollHeight = (html.scrollHeight || body.scrollHeight) - this.innerHeight,
+                scrollTop = html.scrollTop || body.scrollTop || 0;
+            number.innerHTML = Math.round(max / scrollHeight * scrollTop);
+        });
+    </script>
+    <!-- <script>
+        var number = document.querySelector('.number'),
+            numberTop = number.getBoundingClientRect().top,
+            start = +number.innerHTML, end = +number.dataset.max;
 
+        window.addEventListener('scroll', function onScroll() {
+            if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+                this.removeEventListener('scroll', onScroll);
+                var interval = setInterval(function () {
+                    number.innerHTML = ++start;
+                    if (start == end) {
+                        clearInterval(interval);
+                    }
+                }, 5);
+            }
+        });
+    </script> -->
+
+   
 </body>
 
 </html>
