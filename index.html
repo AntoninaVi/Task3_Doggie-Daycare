@@ -234,50 +234,97 @@
                     <!-- <div class="number">0</div> -->
                     <!-- <div class="number" data-max="6000">5700</div> -->
                     <div class="number" id="number"></div>
-                    <p class="form-customers">Maxime placeat facere possimus omnis</p>
+                    <p class="form-customers">customers served</p>
                 </div>
             </section>
         </div>
     </div>
+    <div class="container">
+        <section class="streams">
+            <p class="paragraph paragraph--streams">GAllery & live streams</p>
+            <h2 class="title title--streams">Check out our hard workers</h2>
+            <div class="tabs">
+                <div class="tabs__buttons">
+                    <button class="tab-button active" data-id="Gallery">Gallery</button>
+                    <button class="tab-button" data-id="Yard-1">Live stream: Yard 1</button>
+                    <button class="tab-button" data-id="Yard-2">Live stream: Yard 2</button>
+                    <button class="tab-button" data-id="Yard-3">Live stream: Yard 3</button>
+                </div>
+                <div class="content-Tabs">
+                    <p class="content active" id="Gallery">
+                        <img src="/img/youtube.svg" alt="">
+                    </p>
+                    <p class="content" id="Yard-1">
+                        <img src="img/dog-live.png" alt="">
+                    </p>
+                    <p class="content" id="Yard-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit incidunt nostrum?
+                        Magni, quam
+                        vero, magnam odio similique ipsam minima et repellat rerum cupiditate totam in repudiandae. Sed,
+                        dicta
+                        corrupti?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolore quas quis earum
+                        incidunt
+                        voluptas! Ducimus quod libero aliquid consequatur et modi porro officia, quibusdam quas commodi
+                        placeat
+                        maxime qui?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ea debitis eligendi accusamus
+                        deleniti
+                        maxime pariatur. Assumenda, facere placeat eius quam magni accusantium aut quae minima iure
+                        atque
+                        incidunt illum.
+                    </p>
+                    <p class="content" id="Yard-3">
+                        <img src="/img/Circles.svg" alt="">
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+
+</body>
+
+</html>
 
 
 
 
-
-
-    <script>
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                let dropdowns = document.getElementsByClassName('dropdown-content');
-                for (let i = 0; i < dropdowns.length; i++) {
-                    let openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
+<script>
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName('dropdown-content');
+            for (let i = 0; i < dropdowns.length; i++) {
+                let openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
                 }
             }
+        }
+    };
+    const dropbtn = document.querySelectorAll('.dropbtn');
+
+    dropbtn.forEach(function (item) {
+        item.onclick = function () {
+            this.nextElementSibling.classList.toggle('show')
         };
-        const dropbtn = document.querySelectorAll('.dropbtn');
+    })
+</script>
+<script>
+    var body = document.body,
+        html = document.documentElement,
+        number = document.querySelector('.number'),
+        max = 5700;
 
-        dropbtn.forEach(function (item) {
-            item.onclick = function () {
-                this.nextElementSibling.classList.toggle('show')
-            };
-        })
-    </script>
-    <script>
-        var body = document.body,
-            html = document.documentElement,
-            number = document.querySelector('.number'),
-            max = 5700;
-
-        window.addEventListener('scroll', function () {
-            var scrollHeight = (html.scrollHeight || body.scrollHeight) - this.innerHeight,
-                scrollTop = html.scrollTop || body.scrollTop || 0;
-            number.innerHTML = Math.round(max / scrollHeight * scrollTop);
-        });
-    </script>
-    <!-- <script>
+    window.addEventListener('scroll', function () {
+        var scrollHeight = (html.scrollHeight || body.scrollHeight) - this.innerHeight,
+            scrollTop = html.scrollTop || body.scrollTop || 0;
+        number.innerHTML = Math.round(max / scrollHeight * scrollTop);
+    });
+</script>
+<!-- <script>
         var number = document.querySelector('.number'),
             numberTop = number.getBoundingClientRect().top,
             start = +number.innerHTML, end = +number.dataset.max;
@@ -294,8 +341,29 @@
             }
         });
     </script> -->
+<!-- Tabs -->
+<script>
+    const tabs = document.querySelector(".tabs");
+    const tabButton = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".content");
 
-   
+    tabs.onclick = e => {
+        const id = e.target.dataset.id;
+        if (id) {
+            tabButton.forEach(btn => {
+                btn.classList.remove("active");
+            });
+            e.target.classList.add("active");
+
+            contents.forEach(content => {
+                content.classList.remove("active");
+            });
+            const element = document.getElementById(id);
+            element.classList.add("active");
+        }
+    }
+</script>
+
 </body>
 
 </html>
