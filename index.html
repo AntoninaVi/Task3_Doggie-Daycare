@@ -211,6 +211,7 @@
     <div class="wrapper__form">
         <div class="container">
             <section class="form__section">
+                <img src="img/form-bg.png" alt="background" class="form__bg">
                 <form action="action_form" method="POST">
                     <h2 class="title title--form">Make an apointment</h2>
                     <input class="email" required="required" type="email" placeholder="Email">
@@ -242,43 +243,50 @@
     <div class="wrapper__streams">
         <div class="container">
             <section class="streams">
-                <p class="paragraph paragraph--streams">GAllery & live streams</p>
+
+                <div class="name-section">
+                    <span><svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2718 6.61768L9.71338 8.17282L14.7755 13.2353L9.71338 18.2978L11.2718 19.853L17.9034 13.2353L11.2718 6.61768Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M10.5905 10.4228L9.72474 9.55884L6.04053 13.2353L9.72474 16.9118L10.5905 16.0478L7.77825 13.2353L10.5905 10.4228Z"
+                                fill="#FFFFFF" />
+                        </svg></span>
+                    <p class="paragraph paragraph--who">gallery & live streams</p>
+                </div>
                 <h2 class="title title--streams">Check out our hard workers</h2>
                 <div class="tabs">
                     <div class="tabs__buttons">
-                        <button class="tab-button active" data-id="Gallery">Gallery</button>
+                        <button class="tab-button active" data-id="gallery">Gallery</button>
                         <button class="tab-button" data-id="Yard-1">Live stream: Yard 1</button>
                         <button class="tab-button" data-id="Yard-2">Live stream: Yard 2</button>
                         <button class="tab-button" data-id="Yard-3">Live stream: Yard 3</button>
                     </div>
                     <div class="content-Tabs">
-                        <p class="content active" id="Gallery">
-                            <img src="/img/youtube.svg" alt="">
-                        </p>
-                        <p class="content" id="Yard-1">
+                        <p class="content active" id="gallery">
+                            <img src="img/dog-live.png" alt="">
+                            <img src="img/dog-live.png" alt="">
                             <img src="img/dog-live.png" alt="">
                         </p>
+                        <p class="content" id="Yard-1">
+                            <iframe width="560" height="500" src="https://www.youtube.com/embed/rvklwR7SOxY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </p>
                         <p class="content" id="Yard-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit incidunt nostrum?
-                            Magni, quam
-                            vero, magnam odio similique ipsam minima et repellat rerum cupiditate totam in repudiandae.
-                            Sed,
-                            dicta
-                            corrupti?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolore quas quis earum
-                            incidunt
-                            voluptas! Ducimus quod libero aliquid consequatur et modi porro officia, quibusdam quas
-                            commodi
-                            placeat
-                            maxime qui?
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ea debitis eligendi accusamus
-                            deleniti
-                            maxime pariatur. Assumenda, facere placeat eius quam magni accusantium aut quae minima iure
-                            atque
-                            incidunt illum.
+                            <iframe width="560" height="500" src="https://www.youtube.com/embed/8wA8M8MoEjQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </p>
                         <p class="content" id="Yard-3">
-                            <img src="/img/Circles.svg" alt="">
+                            <iframe width="560" height="500" src="https://www.youtube.com/embed/UKewV_4bkxg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </p>
                     </div>
                 </div>
@@ -289,7 +297,11 @@
         <div class="container">
             <section class="customers">
                 <div class="customers__text">
-                    <p class="paragraph paragraph--customers">Our CUSTOMERS</p>
+                    <div class="name-section">
+                        <span><img src="img/Overline.svg" alt="Overline"></span>
+                        <p class="paragraph paragraph--promise">our customers
+                        </p>
+                    </div>
                     <h2 class="title title--customers">Illum qui dolorem eum quo voluptas ut distinctio</h2>
                 </div>
                 <div class="customers__content">
@@ -319,7 +331,18 @@
         <img src="img/dog_laying.png" alt="dog" class="impact__img">
         <div class="container">
             <section class="impact">
-                <p class="paragraph paragraph--impact">our impact</p>
+                <div class="name-section">
+                    <span><svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2718 6.61768L9.71338 8.17282L14.7755 13.2353L9.71338 18.2978L11.2718 19.853L17.9034 13.2353L11.2718 6.61768Z"
+                                fill="#FFFFFF" />
+                            <path
+                                d="M10.5905 10.4228L9.72474 9.55884L6.04053 13.2353L9.72474 16.9118L10.5905 16.0478L7.77825 13.2353L10.5905 10.4228Z"
+                                fill="#FFFFFF" />
+                        </svg></span>
+                    <p class="paragraph paragraph--who">our impact</p>
+                </div>
                 <h2 class="title title--impact">Nemo enim ipsam voluptatem quia voluptas</h2>
                 <div class="impact__content">
                     <article class="impact__content-card">
@@ -446,6 +469,7 @@
         };
     })
 </script>
+
 <script>
     var body = document.body,
         html = document.documentElement,
