@@ -283,12 +283,14 @@ body {
 .ball__content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
 }
 .title--ball {
     width: 411px;
 }
 .img__tennis-ball {
+    position: relative;
+    top: 15%;
+    left: 3%;
 }
 /* Services */
 .wrapper__services {
@@ -461,8 +463,6 @@ textarea::placeholder {
 .title--streams {
     margin-bottom: 55px;
 }
-.tabs {
-}
 .tabs__buttons {
     text-align: center;
     border-bottom: 1px solid #fff;
@@ -484,13 +484,6 @@ textarea::placeholder {
 .tab-button:last-child {
     margin-right: 0;
 }
-.active {
-}
-.content-Tabs {
-}
-.content {
-}
-
 button.active {
     background-color: #5d62b5;
     border-bottom: 4px solid #fff;
@@ -510,7 +503,6 @@ button.active {
 }
 iframe {
     width: 100%;
-
     border-radius: 40px;
 }
 /* Customers */
