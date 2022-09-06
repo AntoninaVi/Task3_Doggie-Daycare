@@ -116,7 +116,7 @@
                         <p class="paragraph paragraph--who">who we are</p>
                     </div>
 
-                    <h2 class="title title--who">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
+                    <h2 class="title title--who">Nemo enim ipsam voluptatem quia <br> voluptas in proident</h2>
                     <p class="who__description">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                         suscipit
                         laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui
@@ -175,7 +175,7 @@
             <img src="img/jump-dog.png" alt="jumping dog" class="img__ball">
             <div class="ball__content">
                 <h2 class="title title--ball">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
-                <a href="#" class="button button--main">Make an appointment</a>
+                <a href="#" class="button button--ball">Make an appointment</a>
             </div>
             <img src="img/tennis-ball.png" alt="ball" class="img__tennis-ball">
         </section>
@@ -288,10 +288,10 @@
                 <h2 class="title title--streams">Check out our hard workers</h2>
                 <div class="tabs">
                     <div class="tabs__buttons">
-                        <button class="tab-button active" data-id="gallery">Gallery</button>
-                        <button class="tab-button" data-id="Yard-1">Live stream: Yard 1</button>
-                        <button class="tab-button" data-id="Yard-2">Live stream: Yard 2</button>
-                        <button class="tab-button" data-id="Yard-3">Live stream: Yard 3</button>
+                        <button class="tabs__button active" data-id="gallery">Gallery</button>
+                        <button class="tabs__button" data-id="Yard-1">Live stream: Yard 1</button>
+                        <button class="tabs__button" data-id="Yard-2">Live stream: Yard 2</button>
+                        <button class="tabs__button" data-id="Yard-3">Live stream: Yard 3</button>
                     </div>
                     <div class="content-Tabs">
                         <p class="content active" id="gallery">
@@ -533,7 +533,7 @@
 <!-- Tabs -->
 <script>
     const tabs = document.querySelector(".tabs");
-    const tabButton = document.querySelectorAll(".tab-button");
+    const tabButton = document.querySelectorAll(".tabs__button");
     const contents = document.querySelectorAll(".content");
 
     tabs.onclick = e => {
