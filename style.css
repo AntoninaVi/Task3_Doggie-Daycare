@@ -7,6 +7,11 @@ body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
 }
+.container {
+    max-width: 1022px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .button {
     width: 210px;
     height: 48px;
@@ -103,11 +108,6 @@ body {
     background-position: center;
     padding-bottom: 318px;
 }
-.container {
-    max-width: 1022px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .contacts {
     display: flex;
     justify-content: space-between;
@@ -181,15 +181,28 @@ body {
     z-index: 1;
 }
 /* Who */
+
 .who {
     position: relative;
     bottom: 25em;
+}
+@media all and (max-width: 1250px) {
+    .who {
+        bottom: 8em;
+    }
 }
 .img__dots {
     position: relative;
     bottom: -15em;
     left: 90%;
     z-index: 2;
+}
+@media all and (max-width: 1250px) {
+    .img__dots {
+        position: absolute;
+        top: -12%;
+        left: 85%;
+    }
 }
 .who__content {
     max-width: 1020px;
@@ -199,7 +212,11 @@ body {
     border-radius: 40px;
     padding: 100px 87px 0 60px;
 }
-
+@media all and (max-width: 1250px) {
+    .who__content {
+        width: 100%;
+    }
+}
 .name-section {
     display: flex;
     align-items: center;
@@ -226,6 +243,12 @@ body {
 .promise {
     margin-top: -20%;
     margin-bottom: 122px;
+}
+@media all and (max-width: 1250px) {
+    .promise {
+        margin-top: 0;
+        margin-bottom: 122px;
+    }
 }
 .paragraph--promise {
     color: #5d62b5;
@@ -274,6 +297,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 1345px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 23px;
+    padding-right: 43px;
+}
+@media all and (max-width: 1300px) {
+    .img__ball {
+        width: 60%;
+    }
 }
 .ball__content {
     display: flex;
@@ -284,8 +318,14 @@ body {
 }
 .img__tennis-ball {
     position: relative;
-    top: 15%;
-    left: 3%;
+    bottom: 5em;
+    left: 13%;
+}
+@media all and (max-width: 1500px) {
+    .img__tennis-ball {
+        bottom: 3em;
+        left: 3%;
+    }
 }
 /* Services */
 .wrapper__services {
@@ -335,11 +375,23 @@ body {
     padding-top: 140px;
     padding-bottom: 210px;
 }
-.form__bg{
+.form__bg {
     position: absolute;
     z-index: 0;
     left: 12%;
 }
+@media all and (max-width: 1750px) {
+    .form__bg {
+        left: 1%;
+    }
+}
+@media all and (max-width: 1250px) {
+    .form__bg {
+        max-width: 70%;
+        left: -4%;
+    }
+}
+
 .form__section {
     display: flex;
     align-items: center;
@@ -410,7 +462,7 @@ textarea::placeholder {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-} 
+}
 
 .button--form {
     border: none;
@@ -503,7 +555,7 @@ iframe {
 /* Customers */
 .wrapper__customers {
     background-image: url(img/bg-customers.png);
-    background-color: #CDCDCD;
+    background-color: #cdcdcd;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 210px;
@@ -563,8 +615,27 @@ iframe {
     margin-top: -10%;
     max-width: 644px;
 }
+@media all and (max-width: 1300px){
+    .impact__img {
+        bottom: 5em;
+        left: 40%;
+        max-width: 100%;
+    }
+}
+@media all and (max-width: 1100px){
+    .impact__img {
+        margin-top: 0;
+        left: 35%;
+        width: 65%;
+    }
+}
 .impact {
     margin-top: -10em;
+}
+@media all and (max-width: 1300px){
+    .impact {
+        margin-top: -18em;
+    }
 }
 .paragraph--impact {
     margin-bottom: 32px;
@@ -677,7 +748,7 @@ h4 {
     color: #4b4b4b;
     text-decoration: none;
 }
-.footer__links a:hover{
+.footer__links a:hover {
     transition: all 0.2s;
     color: #f2726f;
 }
