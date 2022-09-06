@@ -709,9 +709,9 @@ textarea {
     border-radius: 10px;
     border: 2px solid #ffffff;
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
     input,
-    select{
+    select {
         padding: 20px 20px;
     }
 }
@@ -760,7 +760,7 @@ textarea::placeholder {
         height: 70%;
     }
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
     .button--form {
         font-size: 16px;
         height: 100%;
@@ -810,11 +810,22 @@ textarea::placeholder {
         padding-right: 47px;
     }
 }
+@media all and (max-width: 700px) {
+    .streams {
+        padding: 30px 30px;
+    }
+}
 .paragraph--streams {
     margin-bottom: 33px;
 }
 .title--streams {
     margin-bottom: 55px;
+}
+@media all and (max-width: 700px) {
+    .title--streams {
+        text-align: center;
+        margin-bottom: 0;
+    }
 }
 .tabs__buttons {
     text-align: center;
@@ -824,6 +835,13 @@ textarea::placeholder {
 @media all and (max-width: 1100px) {
     .tabs__buttons {
         white-space: nowrap;
+    }
+}
+@media all and (max-width: 700px) {
+    .tabs__buttons {
+        white-space: pre-line;
+        border: none;
+        margin-bottom: 30px;
     }
 }
 .tabs__button {
@@ -859,6 +877,12 @@ textarea::placeholder {
         padding: 5px 13px;
     }
 }
+@media all and (max-width: 700px) {
+    .tabs__button {
+        font-size: 18px;
+        margin-right: 0;
+    }
+}
 button.active {
     background-color: #5d62b5;
     border-bottom: 4px solid #fff;
@@ -876,6 +900,15 @@ button.active {
     margin-left: auto;
     margin-right: auto;
 }
+@media all and (max-width: 700px) {
+    .content.active {
+        position: static;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media all and (max-width: 1100px) {
     .content-Tabs img {
         max-width: 100%;
@@ -897,6 +930,11 @@ iframe {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 210px;
+}
+@media all and (max-width: 700px) {
+    .wrapper__customers {
+        padding-bottom: 50px;
+    }
 }
 .customers {
     display: flex;
@@ -972,22 +1010,22 @@ iframe {
 @media all and (max-width: 1300px) {
     .impact__img {
         bottom: 5em;
-        left: 40%;
+        left: 35%;
         max-width: 100%;
     }
 }
 @media all and (max-width: 1100px) {
     .impact__img {
+        width: 50%;
         margin-top: 0;
-        left: 35%;
-        width: 65%;
+        bottom: 11em;
     }
 }
-@media all and (max-width: 1100px) {
+@media all and (max-width: 700px) {
     .impact__img {
-        width: 60%;
-        left: 35%;
-        bottom: 11em;
+        bottom: 0;
+        top: 1em;
+        left: 38%;
     }
 }
 .impact {
@@ -995,7 +1033,12 @@ iframe {
 }
 @media all and (max-width: 1300px) {
     .impact {
-        margin-top: -18em;
+        margin-top: -15em;
+    }
+}
+@media all and (max-width: 700px) {
+    .impact {
+        margin-top: -7em;
     }
 }
 .paragraph--impact {
@@ -1007,7 +1050,12 @@ iframe {
 }
 @media all and (max-width: 1000px) {
     .title--impact {
-        max-width: 311px;
+        max-width: 300px;
+    }
+}
+@media all and (max-width: 700px) {
+    .title--impact {
+        max-width: 200px;
     }
 }
 .impact__content {
@@ -1219,25 +1267,38 @@ h4 {
     line-height: 18px;
     letter-spacing: 0.15px;
 }
-.copyrights {
-    display: flex;
-}
-.copyrights a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 700;
-}
 @media all and (max-width: 912px) {
     .footer__copyrights {
         font-size: 10px;
         white-space: nowrap;
     }
 }
+.copyrights {
+    display: flex;
+}
+@media all and (max-width: 700px) {
+    .copyrights {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.copyrights a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
 .copyrights a:last-child::before {
     content: "";
     border-left: 1px solid #ffffff;
     margin-left: 5px;
     margin-right: 5px;
+}
+@media all and (max-width: 700px) {
+    .copyrights a:last-child::before {
+        border-left: none;
+        margin: 0;
+    }
 }
 .copyrights p {
     margin-right: 10px;
