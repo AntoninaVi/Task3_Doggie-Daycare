@@ -259,10 +259,10 @@
                     <input class="button button--form" type="submit" value="Make an apointment">
                 </form>
                 <div class="form__section-description">
-                    <p class="form-description">Maxime placeat facere possimus omnis</p>
+                    <p class="form-description">Maxime placeat facere&nbsp;possimus&nbsp;omnis</p>
                     <!-- <div class="number">0</div> -->
-                    <!-- <div class="number" data-max="6000">5700</div> -->
-                    <div class="number" id="number"></div>
+                    <div class="number" id="number" data-max="5700">5000</div>
+                    <!-- <div class="number" id="number">500</div> -->
                     <p class="form-customers">customers served</p>
                 </div>
             </section>
@@ -501,35 +501,35 @@
     })
 </script>
 
-<script>
+<!-- <script>
+    
     var body = document.body,
         html = document.documentElement,
         number = document.querySelector('.number'),
         max = 5700;
-
     window.addEventListener('scroll', function () {
         var scrollHeight = (html.scrollHeight || body.scrollHeight) - this.innerHeight,
             scrollTop = html.scrollTop || body.scrollTop || 0;
         number.innerHTML = Math.round(max / scrollHeight * scrollTop);
     });
-</script>
-<!-- <script>
+</script> -->
+<script>
         var number = document.querySelector('.number'),
             numberTop = number.getBoundingClientRect().top,
             start = +number.innerHTML, end = +number.dataset.max;
 
         window.addEventListener('scroll', function onScroll() {
-            if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+            if (window.pageYOffset > numberTop - window.innerHeight / 3) {
                 this.removeEventListener('scroll', onScroll);
                 var interval = setInterval(function () {
                     number.innerHTML = ++start;
                     if (start == end) {
                         clearInterval(interval);
                     }
-                }, 5);
+                }, 10);
             }
         });
-    </script> -->
+    </script>
 <!-- Tabs -->
 <script>
     const tabs = document.querySelector(".tabs");
