@@ -41,8 +41,8 @@ body {
     cursor: pointer;
     white-space: nowrap;
 }
-@media all and (max-width: 380px){
-    .button{
+@media all and (max-width: 380px) {
+    .button {
         font-size: 10px;
     }
 }
@@ -611,7 +611,6 @@ body {
     position: relative;
     left: 5w;
     bottom: 3vw;
-    
 }
 @media all and (max-width: 1285px) {
     .img__tennis-ball {
@@ -1072,6 +1071,11 @@ iframe {
 .wrapper__impact {
     background-color: #29c3be;
 }
+@media all and (max-width: 600px) {
+    .wrapper__impact {
+        padding-top: 80px;
+    }
+}
 .impact__img {
     position: relative;
     left: 48%;
@@ -1132,7 +1136,7 @@ iframe {
 .impact__content {
     display: flex;
     margin-bottom: 70px;
-    max-width: 100%;
+    justify-content: center;
 }
 @media all and (max-width: 900px) {
     .impact__content {
@@ -1237,7 +1241,6 @@ iframe {
         max-width: 100%;
     }
 }
-
 
 /* Footer */
 .wrapper__footer {
