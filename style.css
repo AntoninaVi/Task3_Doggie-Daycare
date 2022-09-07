@@ -554,7 +554,6 @@ body {
 .wrapper-ball {
     background-image: url(img/bg-promiss.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     padding-top: 44px;
 }
@@ -567,7 +566,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 1345px;
+    max-width: 1345px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -610,9 +609,9 @@ body {
 }
 .img__tennis-ball {
     position: relative;
-    left: 5vw;
+    left: 5w;
     bottom: 3vw;
-    margin-left: 32px;
+    
 }
 @media all and (max-width: 1285px) {
     .img__tennis-ball {
