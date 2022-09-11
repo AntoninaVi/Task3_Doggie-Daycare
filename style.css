@@ -799,7 +799,6 @@ textarea::placeholder {
     -moz-appearance: none;
     appearance: none;
 }
-
 .button--form {
     border: none;
     width: 100%;
@@ -1241,7 +1240,6 @@ iframe {
         max-width: 100%;
     }
 }
-
 /* Footer */
 .wrapper__footer {
     margin-top: calc(88px + 64px);
@@ -1267,7 +1265,6 @@ iframe {
 .footer__content img {
     margin-bottom: 23px;
 }
-
 .footer__content p {
     font-weight: 400;
     font-size: 14px;
@@ -1331,6 +1328,9 @@ h4 {
     line-height: 20px;
     letter-spacing: 0.15px;
     color: #4b4b4b;
+}
+.list__links a{
+    
 }
 .footer__contacts li {
     display: flex;
