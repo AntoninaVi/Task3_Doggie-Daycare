@@ -113,7 +113,12 @@ body {
         left: 90%;
     }
 }
-
+@media all and (max-width: 400px) {
+    .menu__btn {
+        bottom: 11em;
+        left: 85%;
+    }
+}
 .menu__btn span,
 .menu__btn span::before,
 .menu__btn span::after {
@@ -152,7 +157,8 @@ body {
 }
 .menu__item {
     display: block;
-    padding: 20px 0px;
+    margin-top: 15px;
+    padding: 10px 0px;
     font-weight: 700;
     font-size: 20px;
     color: #4b4b4b;
