@@ -654,25 +654,26 @@ body {
     position: relative;
     left: 3vw;
     bottom: 3vw;
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
 }
 @media all and (max-width: 1300px) {
     .img__tennis-ball {
-        width: 30%;
         left: 4vw;
     }
 }
 @media all and (max-width: 870px) {
     .img__tennis-ball {
-        width: 10%;
         left: 5vw;
         top: 1vw;
+        max-width: 15%;
     }
 }
 @media all and (max-width: 549px) {
     .img__tennis-ball {
         top: 20vw;
         left: 35vw;
-        width: 15%;
     }
 }
 /* Services */
