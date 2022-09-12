@@ -608,7 +608,7 @@ body {
         width: 80%;
     }
 }
-@media all and (max-width: 540px) {
+@media all and (max-width: 550px) {
     .ball {
         flex-direction: column-reverse;
         width: 100%;
@@ -631,7 +631,7 @@ body {
         margin-left: auto;
     }
 }
-@media all and (max-width: 540px) {
+@media all and (max-width: 550px) {
     .ball__content {
         max-width: 100%;
     }
@@ -645,7 +645,7 @@ body {
         margin-bottom: 10px;
     }
 }
-@media all and (max-width: 540px) {
+@media all and (max-width: 550px) {
     .button--ball {
         max-width: 60%;
     }
@@ -654,10 +654,8 @@ body {
     position: relative;
     left: 3vw;
     bottom: 3vw;
-    max-width: 100px;
-    max-height: 100px;
 }
-@media all and (max-width: 1285px) {
+@media all and (max-width: 1300px) {
     .img__tennis-ball {
         width: 30%;
         left: 4vw;
@@ -670,10 +668,10 @@ body {
         top: 1vw;
     }
 }
-@media all and (max-width: 550px) {
+@media all and (max-width: 549px) {
     .img__tennis-ball {
         top: 20vw;
-        left: 34vw;
+        left: 35vw;
         width: 15%;
     }
 }
