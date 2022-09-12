@@ -616,7 +616,7 @@ body {
 }
 @media all and (max-width: 1450px) {
     .img__ball {
-        width: 50%;
+        width: 53%;
     }
 }
 .ball__content {
@@ -654,27 +654,27 @@ body {
     position: relative;
     left: 3vw;
     bottom: 3vw;
+    max-width: 100px;
+    max-height: 100px;
 }
 @media all and (max-width: 1285px) {
     .img__tennis-ball {
-        max-width: 100px;
-        width: 100%;
+        width: 30%;
         left: 4vw;
     }
 }
 @media all and (max-width: 870px) {
     .img__tennis-ball {
-        width: 20%;
+        width: 10%;
         left: 5vw;
         top: 1vw;
     }
 }
-@media all and (max-width: 540px) {
+@media all and (max-width: 550px) {
     .img__tennis-ball {
         top: 20vw;
         left: 34vw;
-        width: 13%;
-        height: 13%;
+        width: 15%;
     }
 }
 /* Services */
@@ -1464,7 +1464,6 @@ h4 {
 }
 .copyrights {
     display: flex;
-    
 }
 @media all and (max-width: 700px) {
     .copyrights {
