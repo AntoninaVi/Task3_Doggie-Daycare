@@ -734,13 +734,13 @@ form {
     form {
         margin-left: auto;
         margin-right: auto;
-        height: 50em;
-        width: 80%;
+        height: 40em;
+        width: 75%;
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     form {
-        height: 100%;
+        height: 70%;
         display: flex;
         flex-direction: column;
     }
@@ -764,7 +764,7 @@ textarea {
     border-radius: 10px;
     border: 2px solid #ffffff;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     input,
     select {
         padding: 20px 20px;
@@ -812,13 +812,18 @@ textarea::placeholder {
     .button--form {
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
-        height: 70%;
+        height: 100%;
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .button--form {
-        font-size: 16px;
+        max-width: 60%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .button--form {
+        max-width: 100%;
         height: 100%;
     }
 }
@@ -1361,9 +1366,9 @@ p {
     .footer__copyrights {
         justify-content: center;
         align-items: center;
+        text-align: center;
         flex-wrap: wrap;
         font-size: 10px;
-        white-space: nowrap;
     }
 }
 .copyrights {
