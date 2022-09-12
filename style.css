@@ -1416,7 +1416,7 @@ h4 {
     font-weight: 400;
     font-size: 14px;
 }
-p {
+.list__links p {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -1453,6 +1453,7 @@ p {
 }
 .copyrights {
     display: flex;
+    
 }
 @media all and (max-width: 700px) {
     .copyrights {
