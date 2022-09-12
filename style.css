@@ -656,6 +656,7 @@ body {
     bottom: 3vw;
     object-fit: contain;
     max-width: 100%;
+    height: auto;
 }
 @media all and (max-width: 1300px) {
     .img__tennis-ball {
