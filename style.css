@@ -1319,23 +1319,25 @@ h4 {
     line-height: 22px;
     letter-spacing: 0.15px;
     color: #4b4b4b;
+    cursor: pointer;
 }
-.footer__links a:hover {
+.list__links a:hover {
     transition: all 0.2s;
     color: #f2726f;
 }
 .list__links li {
     margin-bottom: 18px;
 }
-.list__links p {
+.footer__contacts .list__links a {
+    font-weight: 400;
+    font-size: 14px;
+}
+p {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.15px;
     color: #4b4b4b;
-}
-.list__links a{
-    
 }
 .footer__contacts li {
     display: flex;
