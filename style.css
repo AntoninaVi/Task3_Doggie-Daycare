@@ -654,8 +654,7 @@ body {
     position: relative;
     left: 3vw;
     bottom: 3vw;
-    object-fit: cover;
-    max-height: 100%;
+    object-fit: contain;
     max-width: 100%;
 }
 @media all and (max-width: 1300px) {
