@@ -1453,6 +1453,16 @@ h4 {
         margin-left: 0;
     }
 }
+@media all and (max-width: 455px){
+    .footer__contacts .list__links{
+        margin-left: 18px;
+    }
+}
+@media all and (max-width: 430px){
+    .footer__contacts .list__links{
+        margin-left: 0;
+    }
+}
 .footer__copyrights {
     display: flex;
     justify-content: space-between;
